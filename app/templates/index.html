@@ -32,7 +32,7 @@
     <header class="container">
 
         <div class="header-frame">
-            <div class="logo"><a href="test.html">HostAc</a></div>
+            <div class="logo"><a href="{{ url_for('home_page') }}">HostAc</a></div>
             <div class="nav">
                 <nav>
                     <ul>
@@ -44,26 +44,26 @@
                         
                         <div class="menu-list">
                             
-                            <a href="test.html" class="active">
+                            <a href="{{ url_for('home_page') }}">
                                 <li>
                                     Home
                                 </li>
                             </a>
                     
-                            <a href="test-descover.html">
+                            <a href="{{ url_for('descover_page') }}">
                                 <li>
                                     Descover
                                 </li>
                                 
                             </a>
                 
-                            <a href="test-wids.html">
+                            <a href="{{ url_for('wids_page') }}">
                                 <li>
                                     WIDS Ife Community
                                 </li>
                             </a>
                     
-                            <a href="#">
+                            <a href="{{ url_for('contact_page') }}">
                                 <li>
                                     Contact
                                 </li>
@@ -80,18 +80,15 @@
        
     </header>
 
-    <main>
-
         {% block body %}
         {% endblock %}
 
-    </main>
 
     <footer class="container">
         <div>
             <nav>
                 <ul>
-                    <a href="test-wids.html">
+                    <a href="{{ url_for('wids_page') }}">
                         <li>
                             <div class="footer-logo">
                                 <img src="../static/images/all/about.png" alt="about-image">
@@ -100,7 +97,7 @@
                         </li>
                     </a>
                    
-                    <a href="#">
+                    <a href="{{ url_for('contact_page') }}">
                         <li>
                             <div class="footer-logo">
                                 <img src="../static/images/all/contact.png" alt="contact-image">
@@ -109,7 +106,7 @@
                         </li>
                     </a>
                     
-                    <a href="#">
+                    <a href="https://www.twitter.com">
                         <li>
                             <div class="footer-logo">
                                 <img src="../static/images/all/twitter.png" alt="twitter-logo">
@@ -118,7 +115,7 @@
                         </li>
                     </a>
                    
-                    <a href="#">
+                    <a href="https://www.fb.com">
                         <li>
                             <div class="footer-logo">
                                 <img src="../static/images/all/facebook.png" alt="fb-logo">
