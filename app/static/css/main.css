@@ -1,0 +1,228 @@
+
+
+/* Main Section CSS Starts here */
+
+main .main-section {
+    font-size: 14px;
+}
+
+main .main-section section {
+    height: 70vh;
+}
+
+main .main-section section:nth-child(odd) {
+    background: linear-gradient(left, var(--white) 50%, var(--div-bg1) 50%);
+    background: -moz-linear-gradient(left, var(--white) 50%, var(--div-bg1) 50%);
+    background: -webkit-linear-gradient(left, var(--white) 50%, var(--div-bg1) 50%);
+}
+
+main .main-section section:nth-child(even) {
+    background: linear-gradient(left, var(--div-bg2) 50%, var(--white) 50%);
+    background: -moz-linear-gradient(left, var(--div-bg2) 50%,  var(--white) 50%);
+    background: -webkit-linear-gradient(left, var(--div-bg2) 50%, var(--white) 50%);
+}
+
+main .main-section .wids-section:nth-child(odd) {
+    background: -webkit-linear-gradient(right, rgba(235, 133, 58, 0.6) 65%, white 0%);
+    background: -moz-linear-gradient(right, rgba(235, 133, 58, 0.6) 65%, white 0%);
+    background: linear-gradient(right, rgba(235, 133, 58, 0.6) 65%, white 0%);
+}
+
+main .main-section .wids-section:nth-child(even) {
+    background: -webkit-linear-gradient(left, rgba(0, 120, 231, 0.7) 65%, white 0%);
+    background: -moz-linear-gradient(left, rgba(0, 120, 231, 0.7) 65%, white 0%);
+    background: linear-gradient(left, rgba(0, 120, 231, 0.7) 65%, white 0%);
+}
+
+main .main-section .wids-section:nth-child(3) {
+    background: -webkit-linear-gradient(right, rgba(235, 133, 58, 0.6) 65%, white 0%);
+    background: -moz-linear-gradient(right, rgba(235, 133, 58, 0.6) 65%, white 0%);
+    background: linear-gradient(right, rgba(235, 133, 58, 0.6) 65%, white 0%);
+    background-repeat: no-repeat;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-section .wids-section .hightlight {
+    font-size: 1.7em;
+    letter-spacing: 1px;
+    color: var(--div-color1);
+}
+
+main .main-section .wids-section:nth-child(4) {
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*min-height: 50em;*/
+    padding: 5em 0;
+}
+
+main .main-section .wids-section .wids-hightlight-imgs ul {
+    display: inline;
+    list-style-type: none;
+   /* padding: 20px 20px;*/
+}
+
+main .main-section .wids-section .wids-hightlight-imgs ul li {
+    display: inline-block;
+    margin: 10px 10px 10px 0;
+}
+
+main .main-section .wids-section .wids-hightlight-imgs ul li div {
+    height: 18em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .main-section .wids-section .wids-hightlight-imgs img {
+    max-height: 100%;
+}
+
+
+.main-section .section-div-odd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70vh;
+}
+
+.main-section .section-div-even{
+    display:  flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    height: 70vh;
+}
+
+.main-section .section-div-even .left,
+.main-section .section-div-odd .left {
+    width: 50%;
+    align-self: center;
+    justify-self: center;
+}
+
+.main-section .section-div-even .left img {
+    max-width: 100%;
+    transform: translateX(-20px);
+}
+
+.main-section .section-div-odd .left img {
+    max-width: 100%;
+    transform: translateX(20px);
+}
+
+.main-section .section-div-even .right,
+.main-section .section-div-odd .right {
+    flex-basis: 45%;
+}
+
+.main-section .section-div-even .right .sentence {
+    text-align: left;
+    padding-right: 80px;
+    color: var(--white);
+    max-width: none;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.main-section .section-div-odd .right .sentence {
+    text-align: right;
+    padding-left: 80px;
+    color: var(--div-color1);
+    max-width: none;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.main-section .section-div-even .right .sentence .topic,
+.main-section .section-div-odd .right .sentence .topic {
+    font-size: 1.7em;
+    margin-bottom: 1em;
+}
+
+
+@media screen and (max-width: 780px) {
+    main .main-section {
+        font-size: 12px;
+    }
+
+    main .main-section section {
+        height: 50em;
+    }
+
+    main .main-section section:nth-child(odd),
+    main .main-section .wids-section:nth-child(odd) {
+        background: linear-gradient(top, var(--white) 50%, var(--div-bg1) 50%);
+        background: -moz-linear-gradient(top, var(--white) 50%, var(--div-bg1) 50%);
+        background: -webkit-linear-gradient(top, var(--white) 50%, var(--div-bg1) 50%);
+    }
+
+    main .main-section section:nth-child(even),
+    main .main-section .wids-section:nth-child(even) {
+        background: linear-gradient(bottom, var(--div-bg2) 50%, var(--white) 50%);
+        background: -moz-linear-gradient(bottom, var(--div-bg2) 50%,  var(--white) 50%);
+        background: -webkit-linear-gradient(bottom, var(--div-bg2) 50%, var(--white) 50%);
+    }
+    
+    main .main-section .wids-section:nth-child(3) {
+        background: rgba(235, 133, 58, 0.6) ;
+        background-repeat: no-repeat;
+        background-size: 100% 90px;
+    }
+
+    main .main-section .wids-section:nth-child(4) {
+        background: var(--white);
+        padding: 3em 0;
+    }
+
+    .main-section .section-div-even,
+    .main-section .section-div-odd {
+        display:  flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50em
+    }
+
+    .main-section .section-div-even .left,
+    .main-section .section-div-odd .left {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 50%;
+    }
+
+    .main-section .section-div-even .left img,
+    .main-section .section-div-odd .left img {
+        max-height: 21em;
+        transform: translateX(0px);
+        align-self: center;
+    }
+
+    .main-section .section-div-even .right,
+    .main-section .section-div-odd .right {
+        display: flex;
+        flex-basis: 50%;
+    }
+
+    .main-section .section-div-odd .right .sentence,
+    .main-section .section-div-even .right .sentence  {
+        align-self: center;
+        text-align: center;
+        padding: 0 0;
+        max-width: 320px;
+        line-height: 24px;
+        letter-spacing: 1px;
+    }
+
+    .main-section .section-div-even .right .sentence .topic,
+    .main-section .section-div-odd .right .sentence .topic {
+        font-size: 1.5em;
+        margin-bottom: 0.8em;
+    }
+}

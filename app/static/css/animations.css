@@ -1,0 +1,89 @@
+
+
+/* Animation session starts */
+.animate-session-in {
+    animation: move-in-left-right-top 1s;
+    -webkit-animation: move-in-left-right-top 1s;
+    animation-timing-function: cubic-bezier(.56,.12,.45,.78);
+    -webkit-animation-timing-function: cubic-bezier(.56,.12,.45,.78);
+    opacity: 1;
+    overflow-x: hidden;
+}
+
+.animate-session-in-slow-left-top {
+    animation: move-in-left-right-top 3s;
+    -webkit-animation: move-in-left-right-top 3s;
+    animation-timing-function: cubic-bezier(0,-0.49,.36,1);
+    -webkit-animation-timing-function: cubic-bezier(0,-0.49,.36,1);
+}
+
+.animate-session-in-slow-left {
+    animation: move-in-left-right 3s;
+    -webkit-animation: move-in-left-right 3s;
+    animation-timing-function: cubic-bezier(0,-0.49,.36,1);
+    -webkit-animation-timing-function: cubic-bezier(0,-0.49,.36,1);
+}
+
+.animate-session-in-slow-right-top {
+    animation: move-in-right-left-top 3s;
+    -webkit-animation: move-in-right-left-top 3s;
+    animation-timing-function: cubic-bezier(0,-0.49,.36,1);
+    -webkit-animation-timing-function: cubic-bezier(0,-0.49,.36,1);
+}
+
+.animate-session-in-slow-right {
+    animation: move-in-right-left 3s;
+    -webkit-animation: move-in-right-left 3s;
+    animation-timing-function: cubic-bezier(0,-0.49,.36,1);
+    -webkit-animation-timing-function: cubic-bezier(0,-0.49,.36,1);
+}
+
+        
+@keyframes move-in-left-right-top {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes move-in-left-right {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(20px);
+        opacity: 1;
+    }
+
+}
+
+@keyframes move-in-right-left-top {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes move-in-right-left {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(-20px);
+        opacity: 1;
+    }
+}

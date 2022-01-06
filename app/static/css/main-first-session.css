@@ -1,0 +1,268 @@
+
+
+main {
+    text-align: center;
+}
+
+main .first-session  {
+    display: flex;
+    min-height: 50vh;
+    margin-bottom: 20vh;
+}
+
+main .first-session .left-top {
+    flex-basis: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: none;
+}
+
+main .first-session .left-top .top {  
+    padding-top: 10px; 
+    margin-bottom: 5vh;
+}
+
+/*
+main .first-session .left-top .left-top-inner-div {
+    min-height: calc(100vh - 55vh);
+   
+}
+*/
+
+main .first-session .left-top .small-intro {
+    letter-spacing: 5px;
+    font-size: 9px;
+    text-transform: uppercase;
+    color: grey;
+}
+
+main .first-session .left-top .big-intro {
+    font-size: 4em;
+    font-weight: 200;
+    max-width: 410px;
+}
+
+main .first-session .left-top .big-intro .home-page{
+    background: url('../images/all/big-intro-line.svg') no-repeat bottom center;
+    background-size: contain;
+    /*background-size: 100% 14.5px;*/
+    padding-bottom: 5px;
+}
+
+main .first-session .left-top .big-intro .wids-page {
+    background: url('../images/wids-comm-images/wids-line.svg') no-repeat bottom center;
+    background-size: contain;
+    padding-bottom: 5px;
+}
+
+main .first-session .call-btn {
+    display: none;
+}
+
+main .first-session .button .svg {
+    background: url('../images/all/mdi_magnify.svg') no-repeat left center;
+    min-width: 15px;
+    min-height: 10px;
+    background-size: 100% 100%;
+}
+
+main .first-session .right-top {
+    flex-basis: 45%;
+}
+
+main .first-session .right-top .storefront {
+    background: url('../images/home-images/storefront_illustration.svg') no-repeat left center;
+    max-width: 100%;
+    min-height: 50vh;
+   /* max-height: calc(100vh - 45vh);*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+main .first-session .right-top .wids-logo {
+    background: url('../images/wids-comm-images/wids-matrix-stacked.png') no-repeat left center;
+    max-width: 100%;
+    min-height: 50vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* first session mobile view 2 media */
+@media screen and (max-width: 1000px){
+
+    main .first-session .left-top .top {  
+        padding-top: 22px;
+    }
+
+    main .first-session .left-top .big-intro {
+        font-size: 3.5em;
+        font-weight: 200;
+        max-width: 300px;
+    }
+
+    main .first-session .left-top .small-intro {
+        letter-spacing: 3.5px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    /* first session*/
+
+    .container {
+        margin: 0 auto;
+        max-width: none;
+        width: calc(100vw - 3em);
+    }
+
+    main .first-session  {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15vh;
+    }
+
+
+    main .first-session .left-top {
+        flex-basis: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 0 10px;
+        margin-bottom: 60px;
+    }
+
+    /*main .first-session .left-top .left-top-inner-div {
+        min-height: calc(100vh - 48vh);
+    }*/
+
+    main .first-session .left-top .top {  
+        padding-top: 20px; 
+        /*margin-bottom: calc(50vh - 43vh);*/
+    }
+
+    main .first-session .left-top .small-intro {
+        letter-spacing: 7px;
+    }
+
+    main .first-session .left-top .big-intro {
+        margin: 0 auto;
+        font-size: 4em;
+        font-weight: 200;
+        max-width: 450px;
+    }
+
+    main .first-session .right-top {
+        flex-basis: 100%;
+    }
+
+
+    main .first-session .right-top .storefront,
+    main .first-session .right-top .wids-logo  {
+        
+        min-width: 100%;
+        min-height: calc(100vh - 65vh);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    main .first-session .descover-desktop {
+        display: none;
+    }
+
+    main .first-session .call-btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    main .first-session button {
+        background: var(--button-bg);
+        color: var(--white);
+        border-radius: 50px;
+        border-color: rgba(220, 119, 44, 1);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        min-width: 130px;
+        line-height: 35px;
+        font-size: 12px;
+        box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(202, 201, 200);
+        cursor: pointer;
+        padding: 0 5px;
+    }
+
+    main .first-session button .svg {
+        background: url('../images/all/mdi_magnify.svg') no-repeat center center;
+        min-width: 16px;
+        min-height: 20px;
+        background-size: 100% 100%;
+        padding: 1px 5px;
+    }
+
+    main .first-session button .descover {
+        letter-spacing: .5px;
+        font-size: 16px;
+        font-weight: 300;
+        padding: 1px 5px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: calc(100vw - 3em);
+    }
+
+    /* main .first-session  {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15vh;
+    }
+    */
+
+    main .first-session .left-top {
+        padding-bottom: 5px;
+    }
+
+    /*
+    main .first-session .left-top .left-top-inner-div {
+        min-height: calc(100vh - 57vh);
+    }
+    */
+
+    main .first-session .left-top .top {  
+        padding-top: 5px; 
+        margin-bottom: calc(50vh - 45vh);
+    }
+
+    main .first-session .left-top .small-intro {
+        letter-spacing: 2px;
+    }
+
+    main .first-session .left-top .big-intro {
+        font-size: 2.5em;
+        font-weight: 300;
+        max-width: 250px;
+    }
+
+    main .first-session .right-top {
+        flex-basis: 100%;
+    }
+
+
+    main .first-session .right-top .storefront {
+        background: url('../images/home-images/storefront_illustration.svg') no-repeat left center;
+        min-width: 100%;
+        min-height: calc(100vh - 80vh);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+}
+

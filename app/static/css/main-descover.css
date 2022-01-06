@@ -1,0 +1,222 @@
+
+.descover-page {
+    background: var(--white);
+    padding: 20px 0;
+    box-shadow: inset 0px 0px 1px 1px #fff ;
+}
+
+/*.descover-page .descover-head-div {
+    position: relative;
+    min-height: 8vh;
+}*/
+
+
+.descover-page .descover-head {
+   /* position: fixed;*/
+    min-width: 60%;
+    min-height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    border: 1px solid purple;
+}
+
+.descover-head .dig-in {
+    font-size: 1.5em;
+    margin: 12px 0;
+}
+
+.descover-head .descover-search {
+    font-size: 1.5em;
+    margin: 12px 0;
+}
+
+.descover-search .search-box {
+  
+    border: 2px solid var(--div-bg1);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+}
+
+.descover-search .search-box .svg{
+    background: var(--hover-background) url('../images/all/mdi_magnify.svg') no-repeat center center;
+    min-width: 20px;
+    min-height: 30px;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.descover-search .search-box input {
+    border: none;
+    outline: none;
+    max-width: 180px;
+    font-size: 12px;
+}
+
+.descover-search .search-box input[type="search"]::-webkit-search-cancel-button {
+   appearance: none;
+   height: 12px;
+   width: 12px;
+   background: url('../images/all/closeMenu.svg') no-repeat center center;
+   background-size: 100% 100%;
+   cursor: pointer;
+}
+
+.descover-page .descover-main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: row;
+   /*margin: 30px 0;*/
+    min-height: 60vh;
+    position: relative;
+}
+
+.descover-main aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3rem 2rem;
+}
+
+.descover-main aside .aside-in-div {
+    position: fixed;
+    border-right: 1px solid rgb(206, 203, 203);
+}
+
+.descover-main aside .side-menu {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: column;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.descover-main aside .side-menu option,
+.descover-main aside .side-menu select{
+    font-size: 16px;
+    padding: 5px 5px;
+    text-align: center;
+}
+
+.descover-main aside .side-menu input {
+    font-size: 16px;
+    padding-left: 5px;
+    max-width: 100px;
+}
+
+.descover-main aside .side-menu .side-menu-options {
+   /* margin-left: 40px;*/
+}
+
+.descover-main article {
+    flex-basis: 70%;
+    width: 100%;
+    text-align: left;
+    padding: 0 30px;
+}
+
+.descover-main article .results {
+    font-size: 18px;
+}
+
+article .hostels {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+article .hostels ul {
+    display: inline;
+    list-style-type: none;
+}
+
+article .hostels ul li {
+    display: inline-block;
+    margin: 20px 20px 20px 0;
+}
+
+
+.hostels .hostel {
+    width: 13em;
+    height: 18em;
+    /*margin-top: 40px;*/
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(230, 227, 227);
+    overflow: hidden;
+}
+
+.hostels .hostel img {
+    max-width: 100%;
+}
+
+.hostels .hostel .hostel-name {
+    font-size: 17px;
+    font-weight: 400;
+    padding-left: 5px;
+    padding-top: 2px;
+}
+
+.hostels .hostel .hostel-info {
+    padding: 7px 2px;
+    font-size: 12px;
+    width: 100%;
+}
+
+.hostel-info .column {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.hostels .hostel a {
+    width: 100%;
+    text-decoration: none;
+    background-color: var(--div-bg1);
+    color: var(--div-color1);
+    text-align: center;
+    font-size: 14px;
+    padding: 2px 0;
+    font-weight: 200px;
+}
+
+
+@media screen and (max-width: 780px) {
+
+    .descover-page .descover-head {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .descover-head .dig-in,
+    .descover-head .descover-search {
+        margin: 15px 0;
+    }
+
+    .descover-search .search-box {
+        width: 200px;
+    }
+
+    .descover-search .search-box input {
+        max-width: 160px;
+    }
+
+    .descover-page .descover-main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+}

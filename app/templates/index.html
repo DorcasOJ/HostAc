@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&family=Yrsa:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/all/favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/all/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/all/favicon/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='images/all/favicon/site.webmanifest') }}">
+
+    <link rel="stylesheet" href= "{{ url_for('static', filename='css/header-footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/descover-button.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/animations.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/main-first-session.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+    <script src="{{ url_for('static', filename= 'scripts/main.js') }}" defer></script>
+
+    <title>HostAc</title>
+
+</head>
+
+<body>
+
+    <header class="container">
+
+        <div class="header-frame">
+            <div class="logo"><a href="test.html">HostAc</a></div>
+            <div class="nav">
+                <nav>
+                    <ul>
+                        <div class="menu">
+                            <li id="openMenu">
+                            </li>
+                            <li id="closeMenu"></li>
+                        </div>
+                        
+                        <div class="menu-list">
+                            
+                            <a href="test.html" class="active">
+                                <li>
+                                    Home
+                                </li>
+                            </a>
+                    
+                            <a href="test-descover.html">
+                                <li>
+                                    Descover
+                                </li>
+                                
+                            </a>
+                
+                            <a href="test-wids.html">
+                                <li>
+                                    WIDS Ife Community
+                                </li>
+                            </a>
+                    
+                            <a href="#">
+                                <li>
+                                    Contact
+                                </li>
+                            </a>
+                        
+
+                        </div>
+                       
+                    </ul>
+                  
+                </nav>
+            </div>
+        </div>
+       
+    </header>
+
+    <main>
+
+        {% block body %}
+        {% endblock %}
+
+    </main>
+
+    <footer class="container">
+        <div>
+            <nav>
+                <ul>
+                    <a href="test-wids.html">
+                        <li>
+                            <div class="footer-logo">
+                                <img src="../static/images/all/about.png" alt="about-image">
+                            </div>
+                             About
+                        </li>
+                    </a>
+                   
+                    <a href="#">
+                        <li>
+                            <div class="footer-logo">
+                                <img src="../static/images/all/contact.png" alt="contact-image">
+                            </div>
+                            Contact
+                        </li>
+                    </a>
+                    
+                    <a href="#">
+                        <li>
+                            <div class="footer-logo">
+                                <img src="../static/images/all/twitter.png" alt="twitter-logo">
+                            </div>
+                            <div class="twitter">Twitter</div>
+                        </li>
+                    </a>
+                   
+                    <a href="#">
+                        <li>
+                            <div class="footer-logo">
+                                <img src="../static/images/all/facebook.png" alt="fb-logo">
+                            </div>
+                            <div class="fb">Facebook</div>
+                        </li>
+                    </a>
+                    
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+
+</body>
+</html>

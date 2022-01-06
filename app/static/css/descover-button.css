@@ -1,0 +1,104 @@
+
+:root {
+    --btn-height: 42px;
+    --btn-width: 130px;
+    --btn-height-inner-div: 40px;
+    --btn-width-inner-div: 56.6px;
+    --btn-width-hover: 129px;
+}
+
+.left-top a {
+    text-decoration: none;
+}
+
+.descover-desktop {
+    display: flex;
+}
+
+.call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.call-to-action .button {
+    display: flex;
+    height: var(--btn-height);
+    line-height: var(--btn-height);
+    width: var(--btn-width);
+    justify-content: space-around;
+    z-index: 1000;
+}
+
+.call-to-action .svg {
+    background-image: url('../images/all/mdi_magnify.svg');
+    min-width: 15px;
+    min-height: 10px;
+    background-size: 100% 100%;
+}
+
+.call-to-action .descover {
+    font-size: 14px;
+    color: rgba(220, 119, 44, 1);
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.call-to-action .descover span {
+    color: white;
+}
+
+.call-to-action .button-div {
+   position: absolute;
+   height: var(--btn-height);
+   width: var(--btn-width);
+   border: 1px solid rgba(220, 119, 44, 1);
+   border-radius: 10px;
+   transition: width 0.8s;
+  /* background: linear-gradient(90deg,  50%, #FFF 50% );*/
+}
+
+.call-to-action .button-inner-div {
+   position: absolute;
+   z-index: -1;
+   width: var(--btn-width-inner-div);
+   height: var(--btn-height-inner-div);
+   border-radius: 8px;
+   background-color: rgba(220, 119, 44, 0.95);
+   transition: width 0.8s ease-in-out;
+}     
+
+
+.call-to-action .button-inner-div-two {
+    position: absolute;
+    z-index: -1;
+    width: var(--btn-width-inner-div);
+    height: var(--btn-height-inner-div);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: rgba(220, 119, 44, 0.9);
+}
+
+.call-to-action .wids-button .button-inner-div,
+.call-to-action .wids-button .button-inner-div-two {
+    width: calc(var(--btn-width-inner-div) + 3.5px);
+}
+
+.call-to-action > .button .descover{
+    transition: color 0.8s ease-in-out;
+}
+
+.call-to-action:hover > .button .descover{
+   color: white;
+}
+
+.call-to-action:hover .button-inner-div {
+   width: var(--btn-width-hover);
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+
+.call-to-action:hover .button-inner-div-two {
+    background-color: none;
+}
