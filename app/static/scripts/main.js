@@ -99,23 +99,38 @@ const handleScrollAnimation = () => {
     })
 }
 
-asideFunc = ()=> {
-    var aside = document.querySelector('aside');
-    var sticky = aside.offsetTop;
-   
-    if (window.pageYOffset > sticky) {
-        aside.style.top = (window.pageYOffset -0).toString() + 'px'
-
-        console.log(aside.style.top)
-        /*console.log('sticky', window.pageYOffset, sticky);*/
-    } else {
-        aside.style.top = '0';
-        console.log('not sticky', window.pageYOffset, sticky);
-    }
-}
-
-
 document.addEventListener('DOMContentLoaded', ()=>{
+
+    const mainId = document.querySelector('main').id
+    const menuOptions = document.querySelectorAll('.menu-list a')
+    
+    const actionMenu = (idx)=> {
+        menuOptions.forEach((a, index)=> {
+            if (idx !== index) {
+                a.classList.remove('active')
+            } else {
+                a.classList.add('active')
+            }
+        })
+    }
+
+    switch (mainId) {
+        case 'home-page':
+            actionMenu(0)
+            break;
+        case 'descover-page':
+            actionMenu(1)
+            break;
+        case 'wids-page':
+            actionMenu(2)
+            break;
+        case 'contact-page':
+            actionMenu(3)
+            break;
+        default:
+            actionMenu(0)
+            break;
+    }
 
     let deviceWidth = (window.innerWidth > 0) ? window.innerWidth :  document.documentElement.clientWidth;
     if (deviceWidth > 780) {
@@ -126,8 +141,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
         document.addEventListener('scroll', function () {
             handleScrollAnimation();
         })
-
-        // window.onscroll = ()=>{asideFunc()};
     }
     
 })
