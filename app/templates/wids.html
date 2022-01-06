@@ -1,0 +1,180 @@
+{% extends 'index.html' %}
+
+{% block body %}
+
+    <main id='wids-page'>
+
+        <section class="first-session animate-session-in container">
+            <div class="left-top">
+    
+                    <div class="top">
+                        <div class="small-intro">
+                            WIDS Ife Community Design
+                        </div>
+                        <div class="big-intro">
+                            We impact lives with <span class="wids-page"> DataScience</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="descover-desktop">
+                        
+                        <div class="call-to-action">
+                            <div class="button">
+                                <div class="svg"></div>
+                                <div class="descover ">
+                                    <span>Join</span> WIDS Ife
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="button-div wids-button">
+                                <div class="button-inner-div"></div>
+                                <div class="button-inner-div-two"></div>
+                            </div>
+                        </div>
+                        
+                    </a>
+                    
+                    <a href="#" class="call-btn">
+                        <button>
+                            <div class="svg"></div>
+                            <div class="descover">Join WIDS Ife</div>
+                        </button> 
+                    </a>
+            
+            </div>
+            
+            <div class="right-top">
+                <div class="wids-logo animate-session-in-slow-left-top"></div>
+            </div>
+        </section>
+    
+        <div class="main-section">
+    
+            <section class="wids-section">
+             
+                <div class="container">
+                    <div class="section-div-odd">
+                        <div class="left">
+                            <img src="{{ url_for('static', filename= 'images/wids-comm-images/unsplash_hx87JWG4yCI.png') }}" alt="confident-lady">
+                        </div>
+            
+                        <div class="right">
+                            <div class="sentence">
+                                <div class="topic">Women in DataScience Ife Community</div>
+                                <div class="words">
+                                    At Women in DataScience Ife Community,we groom ourselves to
+                                    become renowned data scientist and we are open to other technology
+                                    opportunities that can empower and be used to solved problems in
+                                    our local environment
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                
+            </section>
+    
+    
+            <section class="wids-section">
+                <div class="container">
+                    <div class="section-div-even">
+                        <div class="left">
+                            <img src="{{ url_for('static', filename= 'images/wids-comm-images/hostac.png') }}" alt="hostac-image">
+                        </div>
+            
+                        <div class="right">
+                            <div class="sentence">
+                                <div class="topic">HostAc</div>
+                                <div class="words">
+                                    HostAc is an initiative to make hostel search easier
+                                    for the students at Obafemi Awolowo University in Nigeria
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                
+            </section>
+    
+            <section class="wids-section">
+                <div class="container">
+                    <div class="hightlight">
+                        Hightlights
+                    </div>
+                </div>
+                
+            </section>
+    
+            <div class="wids-section">
+                <div class="container">
+                    <div class="wids-hightlight-imgs">
+                        <ul>
+                            
+                            <li>
+                                <div>
+                                    <img src="{{ url_for('static', filename='images/wids-comm-images/unsplash_hx87JWG4yCI.png') }}" alt="img-1">
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div>
+                                    <img src="{{ url_for('static', filename='images/wids-comm-images/unsplash_hx87JWG4yCI.png') }}" alt="img-2">
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div>
+                                    <img src="{{ url_for('static', filename= 'images/wids-comm-images/unsplash_MsKv6HCQ0F0.png') }}" alt="img-3">
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="{{ url_for('static', filename= 'images/wids-comm-images/unsplash_tOVmshavtoo.png') }}" alt="img-4">
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="{{ url_for('static', filename= 'images/wids-comm-images/unsplash_UygW_kIv2A4.png') }}" alt="img-5">
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+       
+        </div>
+    
+        <section class="last-session">
+           
+            <div class="footer-img">
+    
+                <div class="footer-card">
+                    <div>Looking for an Hostel in Ile-Ife?<br/>Let's get you started</div>
+    
+                    <div>
+                        <button>
+    
+                            <a href="{{ url_for('descover_page') }}">Get Started</a>    
+                            <span></span><span></span><span></span><span></span>
+                            
+                        </button>s
+                    </div>
+    
+                    <div>
+                        <img src="{{ url_for('static', filename= 'images/all/woman_working_2 1.svg') }}" alt="working-women">
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+    
+
+    </main>
+
+{% endblock %}
