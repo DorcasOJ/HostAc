@@ -9,3 +9,15 @@ app = Flask(__name__)
 @app.route('/')
 def home_page():
     return render_template('home.html')
+
+@app.route('/wids-ife-community')
+def wids_page():
+    return render_template('wids.html')
+
+@app.route('/descover')
+def descover_page():
+    return render_template('descover.html')
+
+@app.route('/contact')
+def contact_page():
+    return render_template('contact.html')
