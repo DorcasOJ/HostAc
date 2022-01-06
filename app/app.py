@@ -15,7 +15,7 @@ def wids_page():
     return render_template('wids.html')
 
 @app.route('/descover')
-def descover_page():
+def descover_page(): 
     return render_template('descover.html')
 
 @app.route('/contact')
